@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme ver="2.0">
+  <Gates>
+    <Gate id="g0">
+      <class>sk.uniza.fri.cp.SchematicSim.Gates.MatrixKeyboard</class>
+      <gridX>42</gridX>
+      <gridY>37</gridY>
+      <properties />
+    </Gate>
+    <Gate id="g3">
+      <class>sk.uniza.fri.cp.SchematicSim.Gates.Register8</class>
+      <gridX>77</gridX>
+      <gridY>30</gridY>
+      <properties>
+        <property name="name" value="REG1" />
+        <property name="swapped" value="false" />
+      </properties>
+    </Gate>
+    <Gate id="g1">
+      <class>sk.uniza.fri.cp.SchematicSim.Buses.AddressBus16</class>
+      <gridX>36</gridX>
+      <gridY>39</gridY>
+      <properties>
+        <property name="rows" value="24" />
+        <property name="topRow" value="0" />
+        <property name="rowUnit" value="10" />
+        <property name="taps" value="0:20;1:60;2:100;3:140" />
+      </properties>
+    </Gate>
+    <Gate id="g2">
+      <class>sk.uniza.fri.cp.SchematicSim.Buses.ControlBus</class>
+      <gridX>65</gridX>
+      <gridY>46</gridY>
+      <properties>
+        <property name="rows" value="6" />
+        <property name="topRow" value="0" />
+        <property name="rowUnit" value="10" />
+        <property name="taps" value="3:20;2:40" />
+      </properties>
+    </Gate>
+    <Gate id="g4">
+      <class>sk.uniza.fri.cp.SchematicSim.Gates.Input</class>
+      <gridX>69</gridX>
+      <gridY>48</gridY>
+      <properties>
+        <property name="pinSide" value="RIGHT" />
+        <property name="state" value="1" />
+      </properties>
+    </Gate>
+    <Gate id="g5">
+      <class>sk.uniza.fri.cp.SchematicSim.Buses.DataBus8</class>
+      <gridX>91</gridX>
+      <gridY>30</gridY>
+      <properties>
+        <property name="rows" value="16" />
+        <property name="topRow" value="0" />
+        <property name="rowUnit" value="10" />
+        <property name="taps" value="3:20;2:40;1:60;0:80" />
+      </properties>
+    </Gate>
+    <Gate id="g6">
+      <class>sk.uniza.fri.cp.SchematicSim.Gates.SevenSegmentDisplay</class>
+      <gridX>124</gridX>
+      <gridY>30</gridY>
+      <properties>
+        <property name="color" value="#FF0000" />
+      </properties>
+    </Gate>
+    <Gate id="g7">
+      <class>sk.uniza.fri.cp.SchematicSim.Gates.Register8</class>
+      <gridX>109</gridX>
+      <gridY>30</gridY>
+      <properties>
+        <property name="name" value="REG2" />
+        <property name="swapped" value="false" />
+      </properties>
+    </Gate>
+    <Gate id="g8">
+      <class>sk.uniza.fri.cp.SchematicSim.Buses.DataBus8</class>
+      <gridX>100</gridX>
+      <gridY>30</gridY>
+      <properties>
+        <property name="rows" value="18" />
+        <property name="topRow" value="0" />
+        <property name="rowUnit" value="10" />
+        <property name="taps" value="0:20;1:40;2:60;3:80;4:100;5:120;6:140;7:160" />
+      </properties>
+    </Gate>
+    <Gate id="g9">
+      <class>sk.uniza.fri.cp.SchematicSim.Gates.Input</class>
+      <gridX>104</gridX>
+      <gridY>46</gridY>
+      <properties>
+        <property name="pinSide" value="RIGHT" />
+        <property name="state" value="0" />
+      </properties>
+    </Gate>
+    <Gate id="g10">
+      <class>sk.uniza.fri.cp.SchematicSim.Gates.Input</class>
+      <gridX>118</gridX>
+      <gridY>46</gridY>
+      <properties>
+        <property name="pinSide" value="RIGHT" />
+        <property name="state" value="0" />
+      </properties>
+    </Gate>
+    <Gate id="g11">
+      <class>sk.uniza.fri.cp.SchematicSim.Gates.NotGate</class>
+      <gridX>84</gridX>
+      <gridY>54</gridY>
+      <properties />
+    </Gate>
+  </Gates>
+  <Wires>
+    <Wire color="#000000">
+      <start>
+        <gateId>g0</gateId>
+        <pinIndex>3</pinIndex>
+      </start>
+      <end>
+        <gateId>g1</gateId>
+        <pinIndex>3</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g0</gateId>
+        <pinIndex>2</pinIndex>
+      </start>
+      <end>
+        <gateId>g1</gateId>
+        <pinIndex>2</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g2</gateId>
+        <pinIndex>0</pinIndex>
+      </start>
+      <end>
+        <gateId>g3</gateId>
+        <pinIndex>8</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g4</gateId>
+        <pinIndex>0</pinIndex>
+      </start>
+      <end>
+        <gateId>g3</gateId>
+        <pinIndex>9</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g3</gateId>
+        <pinIndex>0</pinIndex>
+      </start>
+      <end>
+        <junction>
+          <x>460.0</x>
+          <y>320.0</y>
+        </junction>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <junction>
+          <x>460.0</x>
+          <y>320.0</y>
+        </junction>
+      </start>
+      <end>
+        <gateId>g0</gateId>
+        <pinIndex>4</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g3</gateId>
+        <pinIndex>1</pinIndex>
+      </start>
+      <end>
+        <junction>
+          <x>500.0</x>
+          <y>340.0</y>
+        </junction>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <junction>
+          <x>500.0</x>
+          <y>340.0</y>
+        </junction>
+      </start>
+      <end>
+        <gateId>g0</gateId>
+        <pinIndex>5</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g3</gateId>
+        <pinIndex>2</pinIndex>
+      </start>
+      <end>
+        <junction>
+          <x>540.0</x>
+          <y>359.99999999999994</y>
+        </junction>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <junction>
+          <x>540.0</x>
+          <y>359.99999999999994</y>
+        </junction>
+      </start>
+      <end>
+        <gateId>g0</gateId>
+        <pinIndex>6</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g3</gateId>
+        <pinIndex>3</pinIndex>
+      </start>
+      <end>
+        <junction>
+          <x>580.0</x>
+          <y>379.99999999999994</y>
+        </junction>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <junction>
+          <x>580.0</x>
+          <y>379.99999999999994</y>
+        </junction>
+      </start>
+      <end>
+        <gateId>g0</gateId>
+        <pinIndex>7</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g3</gateId>
+        <pinIndex>10</pinIndex>
+      </start>
+      <end>
+        <gateId>g5</gateId>
+        <pinIndex>0</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g3</gateId>
+        <pinIndex>11</pinIndex>
+      </start>
+      <end>
+        <gateId>g5</gateId>
+        <pinIndex>1</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g3</gateId>
+        <pinIndex>12</pinIndex>
+      </start>
+      <end>
+        <gateId>g5</gateId>
+        <pinIndex>2</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g3</gateId>
+        <pinIndex>13</pinIndex>
+      </start>
+      <end>
+        <gateId>g5</gateId>
+        <pinIndex>3</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g1</gateId>
+        <pinIndex>1</pinIndex>
+      </start>
+      <end>
+        <gateId>g0</gateId>
+        <pinIndex>1</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g1</gateId>
+        <pinIndex>0</pinIndex>
+      </start>
+      <end>
+        <gateId>g0</gateId>
+        <pinIndex>0</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g8</gateId>
+        <pinIndex>0</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>0</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g8</gateId>
+        <pinIndex>1</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>1</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g8</gateId>
+        <pinIndex>2</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>2</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g8</gateId>
+        <pinIndex>3</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>3</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g8</gateId>
+        <pinIndex>4</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>4</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g8</gateId>
+        <pinIndex>5</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>5</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g8</gateId>
+        <pinIndex>6</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>6</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g8</gateId>
+        <pinIndex>7</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>7</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g7</gateId>
+        <pinIndex>8</pinIndex>
+      </start>
+      <end>
+        <gateId>g9</gateId>
+        <pinIndex>0</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g10</gateId>
+        <pinIndex>0</pinIndex>
+      </start>
+      <end>
+        <gateId>g6</gateId>
+        <pinIndex>8</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g6</gateId>
+        <pinIndex>7</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>17</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g7</gateId>
+        <pinIndex>16</pinIndex>
+      </start>
+      <end>
+        <gateId>g6</gateId>
+        <pinIndex>6</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g6</gateId>
+        <pinIndex>5</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>15</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g7</gateId>
+        <pinIndex>14</pinIndex>
+      </start>
+      <end>
+        <gateId>g6</gateId>
+        <pinIndex>4</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g6</gateId>
+        <pinIndex>3</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>13</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g7</gateId>
+        <pinIndex>12</pinIndex>
+      </start>
+      <end>
+        <gateId>g6</gateId>
+        <pinIndex>2</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g6</gateId>
+        <pinIndex>1</pinIndex>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>11</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g7</gateId>
+        <pinIndex>10</pinIndex>
+      </start>
+      <end>
+        <gateId>g6</gateId>
+        <pinIndex>0</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g2</gateId>
+        <pinIndex>1</pinIndex>
+      </start>
+      <end>
+        <junction>
+          <x>690.0</x>
+          <y>500.00000000000006</y>
+        </junction>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <junction>
+          <x>690.0</x>
+          <y>500.00000000000006</y>
+        </junction>
+      </start>
+      <end>
+        <junction>
+          <x>690.0</x>
+          <y>560.0</y>
+        </junction>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <junction>
+          <x>690.0</x>
+          <y>560.0</y>
+        </junction>
+      </start>
+      <end>
+        <gateId>g11</gateId>
+        <pinIndex>0</pinIndex>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <gateId>g11</gateId>
+        <pinIndex>1</pinIndex>
+      </start>
+      <end>
+        <junction>
+          <x>1060.0</x>
+          <y>560.0</y>
+        </junction>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <junction>
+          <x>1060.0</x>
+          <y>560.0</y>
+        </junction>
+      </start>
+      <end>
+        <junction>
+          <x>1060.0</x>
+          <y>500.0</y>
+        </junction>
+      </end>
+    </Wire>
+    <Wire color="#000000">
+      <start>
+        <junction>
+          <x>1060.0</x>
+          <y>500.0</y>
+        </junction>
+      </start>
+      <end>
+        <gateId>g7</gateId>
+        <pinIndex>9</pinIndex>
+      </end>
+    </Wire>
+  </Wires>
+</Scheme>
